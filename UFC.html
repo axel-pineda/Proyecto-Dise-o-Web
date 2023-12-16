@@ -1,0 +1,134 @@
+<html>
+    <title>Fortnite</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>UFC 4</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/UFC/ufc1.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/UFC/ufc2.jpg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/UFC/ufc3.jpg" alt="Imagen 3">
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">UFC 4 es la cuarta entrega de la serie de videojuegos de EA Sports basada en las artes marciales mixtas, con licencia oficial de la Ultimate Fighting Championship (UFC). El juego se centra en la simulación realista de los combates de MMA, con un enfoque en la autenticidad y la experiencia de lucha.</p>
+
+                <h2>Descricion  </h2>
+                 
+            <p id="tamaño_texto">Modo Carrera: Los jugadores pueden crear y personalizar a su propio luchador y seguir una carrera en el mundo de las artes marciales mixtas, participando en combates, entrenamientos y tomando decisiones estratégicas para avanzar en su carrera.
+
+Jugabilidad Realista: UFC 4 se esfuerza por ofrecer una experiencia de juego realista, incluyendo mecánicas de lucha auténticas, movimientos de los luchadores, y animaciones que reflejan el estilo y las técnicas del MMA.
+
+Modo Multijugador: Incluye modos multijugador en línea donde los jugadores pueden enfrentarse entre sí en combates de MMA, participar en torneos y competiciones, y medir sus habilidades contra otros jugadores de todo el mundo.
+
+Luchadores y Equipos de UFC: UFC 4 presenta una amplia variedad de luchadores y equipos de la UFC, cada uno con sus propias habilidades y estilos de lucha únicos.
+
+Personalización: Permite a los jugadores personalizar la apariencia, equipo y estilo de lucha de sus luchadores, brindando una experiencia más personalizada.</p>
+                 
+           
+          
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Marvin Daniel Flores</p>
+    </footer>
+</body>
+
+
+</html>

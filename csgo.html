@@ -1,0 +1,134 @@
+<html>
+    <title>CSGO | Conter Strike</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>CSGO | Conter Strike</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/CSGO/csgo.png" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/CSGO/csgo2.jpeg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/CSGO/mapas.jpg" alt="Imagen 3">
+
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">fue un videojuego de disparos en primera persona desarrollado por Valve Corporation y Hidden Path Entertainment. Es el cuarto juego de la saga 
+                Counter-Strike. Fue lanzado al mercado en agosto de 2012 para las plataformas de Microsoft Windows, macOS y Xbox 360 y PlayStation 3. La versión para Linux estuvo 
+                disponible al público en septiembre de 2014.</p>
+
+                <h2>Dentro de los modos incluye</h2>
+
+            <p id="tamaño_texto">Competitivo: También llamado matchmaking, es el modo por excelencia en el cual 2 equipos de 5 jugadores cada uno se enfrentan en una partida al 
+                mejor de 30 rondas. Al jugar en Competitivo, los jugadores entran en un ranking basado en su habilidad, y son emparejados con jugadores de su mismo nivel.</p>
+                 
+            <p id="tamaño_texto">Juegos de Guerra: En estas modalidad de juego tiene distintas formas de juego, las cuales son:1)Carrera de Armamentos 2)Demolición 3)Cazapatos 4)Danger Zone</p>
+                 
+            <p id="tamaño_texto">Casual: En estas modalidad de juego tiene distintas formas de juego, las cuales son:1)Misión de desactivación 2)Misión de rehenes</p>
+                
+            <p id="tamaño_texto">Deathmatch: Es una partida a 10 minutos en donde gana el jugador que más puntos ha conseguido. Estos puntos se consiguen matando enemigos, 
+                las armas son a elección aunque el modo da la opción de dar un arma al azar en cada reaparición.</p>
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Axel Pineda</p>
+    </footer>
+</body>
+
+
+</html>

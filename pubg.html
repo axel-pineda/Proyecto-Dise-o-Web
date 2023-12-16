@@ -1,0 +1,130 @@
+<html>
+    <title>PUBG | PlayerUnknown's Battlegrounds</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>PUBG | PlayerUnknown's Battlegrounds</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/PUBG/PUBG.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/PUBG/maps.jpeg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/PUBG/mobile.jpg" alt="Imagen 3">
+
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">Se basa en el estilo Battle Royale de los mods previamente desarrollados por Brendan "Playerunknown" Greene para otros juegos, pero ampliado 
+                independientemente bajo la dirección creativa de él mismo. En el juego, cien jugadores saltan en paracaídas desde un avión a una isla, donde tienen la libertad 
+                de moverse hacia un lugar determinado que ellos mismos elijan y buscan armas y equipamiento para matar a otros jugadores mientras evitan ser asesinados. El área 
+                segura disponible del mundo del juego disminuye en tamaño durante la partida, dirigiendo a los jugadores sobrevivientes a áreas más reducidas y forzando enfrentamientos. 
+                El último jugador o equipo en pie gana la partida.</p>
+
+                <h2>Dentro de los modos incluye</h2>
+
+            <p id="tamaño_texto">Batalla campal: PUBG es un videojuego de acción en el cual hasta 100 jugadores pelean en una Batalla Real (Battle Royale), un tipo de combate a muerte 
+                en el cual hay enfrentamientos para ser el último con vida. Los jugadores pueden ingresar a la partida en solitario, o con un pequeño equipo compuesto por el propio jugador 
+                y una, dos o tres personas más, formando respectivamente un dúo, un escuadrón de tres o cuatro jugadores. La última persona o equipo con vida gana la partida.</p>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Axel Pineda</p>
+    </footer>
+</body>
+
+
+</html>

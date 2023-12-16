@@ -1,0 +1,131 @@
+<html>
+    <title>Among us</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>Among us</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/among/among1.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/among/mapa.jpg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/among/Personajes.jpg" alt="Imagen 3">
+
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">es un videojuego de género party y multijugador en línea desarrollado por la compañía estadounidense Innersloth y distribuido entre junio y 
+                noviembre de 2018 para las plataformas Android, iOS y Windows. El 15 de diciembre de 2020 se anunció su disponibilidad en Nintendo Switch, mientras que su 
+                adaptación a las consolas Xbox One y Xbox Series X|S se confirmó para 14 de diciembre de 2021.</p>
+
+                <h2>Dentro de los modos incluye</h2>
+
+            <p id="tamaño_texto">Among Us es un videojuego multijugador para cuatro a quince jugadores ambientado en una nave espacial. En cada juego, un anfitrión es responsable 
+                de crear la partida y seleccionar la cantidad de "impostores" que habría de tener la sesión, los cuales son jugadores que deben sabotear las tareas y matar a los demás 
+                tripulantes de la nave sin ser descubiertos. Estos últimos a su vez están a cargo de descubrir los impostores y llevar a cabo las "tareas de mantenimiento" del vehículo. 
+                Una partida puede tener lugar en uno de los cuatro mapas disponibles: The Skeld, centrado en el interior de una nave, Mira HQ, ambientado en una estación espacial, Polus, 
+                asentado en una base de investigación,The Airship, ubicado en un dirigible o The Fungle, situado en una jungla de hongos.</p>
+                 
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Axel Pineda</p>
+    </footer>
+</body>
+
+
+</html>

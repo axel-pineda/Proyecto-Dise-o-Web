@@ -1,0 +1,135 @@
+<html>
+    <title>Fortnite</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>NBA</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/NBA/nba1.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/NBA/nba2.jpg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/NBA/nba3.jpg" alt="Imagen 3">
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">NBA 2K21 es la última entrega de la exitosa franquicia de videojuegos de baloncesto NBA 2K. Como simulador de baloncesto, el juego busca ofrecer una experiencia realista y auténtica del deporte. Incluye equipos y jugadores de la NBA, así como diversos modos de juego para satisfacer tanto a los fanáticos casuales como a los entusiastas del baloncesto.</p>
+
+                <h2>Carracteristicas </h2>
+                 
+            <p id="tamaño_texto">Modos de juego: NBA 2K21 ofrece varios modos de juego, como MyCareer, donde los jugadores pueden crear su propio jugador y seguir su carrera en la NBA, MyTeam, un modo de construcción de equipos, y modos clásicos como Play Now y Online Multiplayer.
+
+Realismo Visual: El juego se destaca por sus gráficos realistas y animaciones que buscan replicar el aspecto y el estilo de juego de los jugadores reales de la NBA.
+
+Jugabilidad Mejorada: NBA 2K21 se esfuerza por mejorar la jugabilidad, con controles refinados y mecánicas de juego que buscan proporcionar una experiencia más auténtica y satisfactoria.
+
+Bandas Sonoras Dinámicas: Al igual que las entregas anteriores, el juego presenta una banda sonora dinámica con canciones de artistas populares, proporcionando un ambiente adicional al juego.
+
+Modo MyTeam: Los jugadores pueden construir y gestionar su propio equipo de ensueño con cartas virtuales de jugadores de la NBA actual y del pasado.</p>
+                 
+            <p id="tamaño_texto">Es importante tener en cuenta que las características específicas pueden variar según la plataforma y las actualizaciones del juego. Para obtener información más detallada y actualizada, te recomendaría consultar las fuentes oficiales y las últimas revisiones del juego.</p>
+                
+          
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Marvin Daniel Flores</p>
+    </footer>
+</body>
+
+
+</html>

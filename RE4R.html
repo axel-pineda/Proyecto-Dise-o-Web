@@ -1,0 +1,122 @@
+<html>
+    <title>RE4R</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>Resident Evil 4 remake</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/terror/RE4R/RE1.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/terror/RE4R/RE2.jpg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/terror/RE4R/RE3.jpg" alt="Imagen 3">
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">Resident Evil 4 se anunció en junio de 2022 y se lanzó para PlayStation 4, PlayStation 5, Windows y Xbox Series X/S el 24 de marzo de 2023. Las versiones para macOS e iOS se lanzarán más adelante en 2023. Recibió elogios de la crítica y se vendió cuatro millones de unidades en sus primeras dos semanas, lo que lo convierte en uno de los juegos de Resident Evil más vendidos. En julio de 2023, el juego había vendido más de cinco millones de unidades.</p>
+
+                <h2>Modo de juego</h2>
+                 
+            <p id="tamaño_texto">La nueva versión de Resident Evil 4 presenta una jugabilidad similar a su inmediato predecesor Resident Evil 3 (videojuego de 2020), siendo que el nuevo videojuego se lleva a cabo en una perspectiva en tercera persona con la cámara sobre el hombro muy similar a la cámara de Resident Evil 2 (videojuego de 2019); los lugares del videojuego original también han sido rediseñados, alterando o reimaginando parcialmente varias zonas, y agregando nuevos lugares, utilizando un sistema de mapa similar pero más detallado. También se mantiene el sistema de curación por hierbas y el estado de salud original, el sistema de administración de recursos en maletín se mantiene al igual que la mayoría de objetos y recursos, ajustados en un sistema de inventario idéntico al ya visto en Resident Evil Village y Resident Evil 4</p>
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Axel Pineda</p>
+    </footer>
+</body>
+
+
+</html>

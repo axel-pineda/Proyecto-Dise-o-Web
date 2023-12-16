@@ -1,0 +1,150 @@
+<html>
+    <title>Fortnite</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>FIFA</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/FIFA/fifa.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/FIFA/fifa2.jpg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/FIFA/fifa3.jpg" alt="Imagen 3">
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">FIFA, que significa Federación Internacional de Fútbol Asociación, es una serie de videojuegos de simulación de fútbol desarrollada y publicada por Electronic Arts (EA Sports). La franquicia ha sido una parte integral del mundo de los videojuegos desde su debut en 1993, y cada año se lanzan nuevas ediciones con mejoras y actualizaciones.</p>
+
+                <h2>Descricion General </h2>
+                 
+            <p id="tamaño_texto">FIFA ofrece a los jugadores la experiencia virtual más cercana posible al fútbol real, con un enfoque en la autenticidad, gráficos de alta calidad y una jugabilidad inmersiva. A continuación, se presentan algunos aspectos clave del juego:
+
+Jugabilidad:
+
+Realismo: FIFA se esfuerza por replicar el estilo de juego del fútbol real. Los jugadores pueden disfrutar de movimientos fluidos, tácticas realistas y una física de pelota auténtica.
+Modos de juego: Incluye modos para un solo jugador, multijugador local y en línea. Los modos populares incluyen "Carrera", "Ultimate Team", "Volta Football" y partidos amistosos.
+Licencias y Equipos:
+
+Licencias: FIFA cuenta con una amplia gama de licencias oficiales que incluyen equipos de ligas nacionales e internacionales, así como competiciones como la UEFA Champions League, la Copa Libertadores y más.
+Equipos y jugadores: Los equipos y jugadores están recreados con gran detalle, incluyendo sus kits, estadios y habilidades específicas.
+Ultimate Team:
+
+Construcción de equipos: En el modo Ultimate Team, los jugadores pueden construir sus propios equipos combinando cartas de jugadores, entrenadores y elementos diversos.
+Competiciones en línea: Puedes competir en línea contra otros jugadores para mejorar tu clasificación y ganar recompensas.
+Carrera:
+
+Jugador o entrenador: En el modo Carrera, puedes elegir ser un jugador o un entrenador, gestionando aspectos como contrataciones, finanzas y estrategias de equipo.
+Volta Football:
+
+Fútbol callejero: Introducido en versiones recientes, Volta Football permite a los jugadores disfrutar de partidos de fútbol callejero con un enfoque en la creatividad y el estilo.
+Gráficos y Presentación:
+
+Detalles visuales: FIFA se destaca por sus gráficos impresionantes, que capturan la apariencia realista de los jugadores, estadios y la acción en el campo.
+Comentarios: Comentarios auténticos y emocionantes mejoran la experiencia, proporcionando una narrativa dinámica durante los partidos.</p>
+                 
+            <p id="tamaño_texto">FIFA ha sido un pilar en la cultura del videojuego, atractivo tanto para los fanáticos apasionados del fútbol como para aquellos que buscan una experiencia de juego emocionante y auténtica. Con cada nueva edición, EA Sports se esfuerza por elevar la barra en términos de realismo y características innovadoras..</p>
+                
+          
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Marvin Daniel Flores</p>
+    </footer>
+</body>
+
+
+</html>

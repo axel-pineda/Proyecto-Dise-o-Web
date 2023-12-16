@@ -1,0 +1,135 @@
+<html>
+    <title>Fortnite</title>
+    <link href="css/Pantallas.css" rel="stylesheet" type="text/css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+<div class="navbar">
+    <a href="index.html" id="Titulo_navbar">Videojuegos</a>
+    <a href="index.html">Inicio</a>
+    <div class="dropdown">
+        <a href="accion.html">Acción</a>
+        <div class="dropdown-content">
+            <a href="fortnite.html">Fortnite</a>
+            <a href="valorant.html">Valorant</a>
+            <a href="csgo.html">Csgo | Conter Strike</a>
+            <a href="pubg.html">PlayerUnknown's Battlegrounds</a>
+            <a href="among.html">Among Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="terror.html">Terror</a>
+        <div class="dropdown-content">
+            <a href="FNAF.html">Five Nights At Freddy's</a>
+            <a href="PP.html">POPPY PLLAYTIME</a>
+            <a href="TTSA.html">The Texas Sae Massacre</a>
+            <a href="RE4R.html">Resident Evil 4 Remake</a>
+            <a href="AI.html">Alien Isolation</a>
+            <!-- Agrega más subtemas según sea necesario -->
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="deportes.html">Deportes</a>
+        <div class="dropdown-content">
+            <a href="FIFA.html">Fifa</a>
+            <a href="NBA.html">NBA</a>
+            <a href="NFL.html">NFL</a>
+            <a href="PES.html" >PES</a>
+            <a href="UFC.html">UFC</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="aventura.html">Aventura</a>
+      <div class="dropdown-content">
+           <a href="horizon.html">Horizon</a>
+          <a href="ittakestwo.html">It takes two</a>
+    <a href="monsterhunter.html">Monster hunter</a>
+    <a href="spyrothedragon.html">Spyro the dragon</a>
+          <a href="zelda.html">Zelda</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="Autores.html">Autores</a>
+      <div class="dropdown-content">
+           <a href="axel.html">Axel</a>
+          <a href="marvin.html">Marvin</a>
+          <a href="franklin.html">Franklin</a>
+          <a href="Kevin.html">Kevin</a>
+          <!-- Agrega más subtemas según sea necesario -->
+      </div>
+    </div>
+  </div>
+
+<body class="ColorFondo">
+    <div class="contenedor">
+        <header>
+            <h1>NFL</h1>
+        </header>
+        <main>
+
+          <div class="contenido">
+            <div class="slice-container">
+                <img class="slice-image active" src="imagenes/accion/NFL/nfl1.jpg" alt="Imagen 1">
+                <img class="slice-image" src="Imagenes/accion/NFL/nfl2.jpg" alt="Imagen 2">
+                <img class="slice-image" src="Imagenes/accion/NFL/nfl3.jpg" alt="Imagen 3">
+                <button class="nav-btn prev-btn" onclick="showPrevImage()">&#9665;</button>
+                <button class="nav-btn next-btn" onclick="showNextImage()">&#9655;</button>
+  
+              </div>
+              
+              <script>
+                const images = document.querySelectorAll(".slice-image");
+                let currentImageIndex = 0;
+            
+                function showNextImage() {
+                  changeImage((currentImageIndex + 1) % images.length);
+                }
+            
+                function showPrevImage() {
+                  changeImage((currentImageIndex - 1 + images.length) % images.length);
+                }
+            
+                function changeImage(newIndex) {
+                  images[currentImageIndex].classList.remove("active");
+                  currentImageIndex = newIndex;
+                  images[currentImageIndex].classList.add("active");
+                }
+            
+                // Inicia el intervalo para cambiar automáticamente las imágenes cada 5000 milisegundos (5 segundos)
+                setInterval(showNextImage, 5000);
+              </script>
+
+            <h2>Información Basica</h2>
+            <p id="tamaño_texto">Madden NFL 21 es la entrega más reciente de la serie de videojuegos Madden NFL, que simula la experiencia del fútbol americano profesional de la National Football League (NFL). El juego busca ofrecer una experiencia auténtica de la NFL, con licencia oficial de equipos, jugadores y estadios.</p>
+
+                <h2>Carracteristicas </h2>
+                 
+            <p id="tamaño_texto">Modo Carrera (Face of the Franchise): Permite a los jugadores crear y personalizar su propio jugador de fútbol americano y seguir una carrera desde la universidad hasta la NFL, tomando decisiones que afectan el desarrollo de la historia.
+
+Modo Ultimate Team: Similar a otros juegos de EA Sports, Madden NFL 21 incluye un modo de construcción de equipos llamado Ultimate Team, donde los jugadores pueden construir y gestionar su propio equipo utilizando cartas virtuales de jugadores.
+
+Realismo en la Jugabilidad: El juego se esfuerza por ofrecer una jugabilidad realista, con mecánicas que reflejan el fútbol americano profesional, tácticas estratégicas y movimientos auténticos de los jugadores.
+
+Equipos y Estadios Oficiales: Madden NFL 21 cuenta con la licencia oficial de la NFL, lo que significa que incluye equipos, jugadores y estadios reales de la liga.
+
+Modo Multijugador: Ofrece modos multijugador en línea donde los jugadores pueden competir contra otros jugadores en partidas amistosas, torneos y ligas en línea.
+
+Gráficos Mejorados: Se han realizado mejoras en los gráficos y las animaciones para brindar una experiencia visual más realista.</p>
+                
+          
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Copyright. Marvin Daniel Flores</p>
+    </footer>
+</body>
+
+
+</html>
